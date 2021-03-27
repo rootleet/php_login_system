@@ -1,0 +1,83 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+main
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+form , .rand
+{
+    width: 25%;
+    background-color: #fff;
+    padding: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h3
+{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input , button , a
+{
+    width: 100%;
+    padding: .5rem;
+    margin-bottom: .5rem;
+    font-weight: 400;
+}
+
+button , a
+{
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.button_container
+{
+    width: 100%;
+    clear: both;
+}
+
+.reg
+{
+    width: 25% !important;
+    float: left;
+    background-color: #333;
+    color: #fff;
+    font-size: medium;
+    cursor: pointer;
+    text-align: center;
+}
+
+.reg:hover
+{
+    background-color: #151515;
+}
+
+.login
+{
+    width: 25% !important;
+    float: right;
+    background-color: #249c31;
+    color: #fff;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.login:hover
+{
+    background-color: #166520;
+}

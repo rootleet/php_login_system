@@ -1,0 +1,38 @@
+<?php
+  require '../php/db_connect.php';
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<main>
+
+  <form action="../php/register.php" method="post">
+
+    <h3>Please fill in the form to register</h3>
+
+    <input required type="text" name="username" placeholder="User">
+
+    <input required type="password" name="password" placeholder="Password">
+
+    <input required type="password" name="con_password" placeholder="Password">
+
+    <div class="button_container">
+      <a onclick="location.href='../'" class="reg">Cancel</a>
+      <button name="register" class="login">Register</button>
+    </div>
+
+
+  </form>
+
+</main>
+
+</body>
+</html>

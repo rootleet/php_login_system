@@ -1,0 +1,40 @@
+<?php
+    session_start();
+    if(isset($_SESSION['login']))
+    {
+        header("Location:home/");
+    }
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main>
+
+        <form action="php/login.php" method="post">
+
+            <h3>Welcome Horse!! Please Login</h3>
+
+            <input type="text" name="username" placeholder="User">
+
+            <input type="password" name="password" placeholder="Password">
+
+            <div class="button_container">
+                <a onclick="location.href='register/'" class="reg">Register</a>
+                <button name="login" class="login">Login</button>
+            </div>
+
+
+        </form>
+
+    </main>
+
+</body>
+</html>
